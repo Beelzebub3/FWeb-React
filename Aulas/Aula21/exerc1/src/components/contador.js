@@ -1,7 +1,11 @@
-import{useState} from 'react';
+import{useState, useEffect} from 'react';
 
 function Contador() {
     const [contador, setContador] = useState(1);
+    useEffect(() =>{const timeID = setInterval(() => {setContador(contador+1)},1000)
+        return () => clearInterval(timeID);
+    },[]);
+     
     function adicionarCont() {
         setContador(contador + 1);
     }
@@ -11,6 +15,5 @@ function Contador() {
             <button onClick={adicionarCont}>Adicionar</button>
         </div>
     )
-
 }
 export default Contador;
