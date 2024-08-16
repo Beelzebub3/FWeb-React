@@ -5,14 +5,25 @@ body{
     background-color: cornsilk;
 }
 main{
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 40%;
     display: inline-block;
     padding: 15px;
 }
+.Formando{
+    margin: 20px;
+    padding-left: 20px;
+}
+.Calculando{
+    
+}
+.Contando{
 
+}
 .Numeros {
-    margin-left: 50%;
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
     position: relative;
     text-align: center;
 }
@@ -31,4 +42,12 @@ button{
 button:hover {
     background-color: rgb(125, 125, 125);
 
+}
+input{
+    width: 75%;
+    border-radius: 10px;
+    height: 30px;
+}
+p{
+    font-size: large;
 }

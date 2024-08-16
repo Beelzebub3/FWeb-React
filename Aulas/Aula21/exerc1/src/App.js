@@ -10,11 +10,14 @@ function App() {
     <div className="Numeros">
       <Counter/>
     </div>
-    <div>
+    <div className='Formando'>
       <Form/>
     </div>
-    <div>
+    <div className='Calculando'>
     <Calculadora/>
+    </div>
+    <div className='Contando'>
+      <Contador/>
     </div>
     </main>
   );
